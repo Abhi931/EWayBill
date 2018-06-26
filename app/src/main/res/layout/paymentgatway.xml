@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nestedScrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#61A6DD"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight=".05"
+            android:gravity="left|center"
+            android:layout_marginLeft="6dp"
+            android:text="Add Payment "
+            android:textColor="#FFF"
+            android:textSize="20dp" />
+
+        <ImageButton
+            android:id="@+id/homeBtn"
+            android:layout_width="42dp"
+            android:layout_height="47dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="9dp"
+            android:background="@drawable/home"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headerLayout"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+
+        </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+
+        >
+
+        <TextView
+            android:id="@+id/totalamounttext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="#ff9b00"
+            android:textStyle="bold"
+            android:background="@color/ntv_white"
+            android:textSize="18dp"
+            android:text=" Total Amount :     " />
+
+        <TextView
+            android:id="@+id/totalamount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="#ff9b00"
+            android:textStyle="bold"
+            android:background="@color/ntv_white"
+            android:textSize="18dp"
+            android:text=" 0 " />
+    </LinearLayout>
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="22dp">
+
+            <EditText
+                android:id="@+id/textInputEditTextamount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Amount"
+                android:inputType="text" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/appCompatButtonLogin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/blue3"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="Add Amount to Wallet"
+            android:textColor="@color/ntv_white" />
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/appCompatButtonpay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/blue3"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="Pay"
+            android:textColor="@color/ntv_white" />
+
+
+
+    </LinearLayout>
+</RelativeLayout>

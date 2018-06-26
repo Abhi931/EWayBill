@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
+
+
+        <LinearLayout
+            android:id="@+id/headerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#61A6DD"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_weight=".05"
+                android:gravity="left|center"
+                android:layout_marginLeft="6dp"
+                android:text="Report"
+                android:textColor="#FFF"
+                android:textSize="24dp" />
+
+            <ImageButton
+                android:id="@+id/homeBtn"
+                android:layout_width="42dp"
+                android:layout_height="47dp"
+android:layout_gravity="center"
+                android:layout_marginRight="9dp"
+                android:background="@drawable/home"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/topHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headerLayout"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/headerLayout"
+                android:layout_marginTop="22dp"
+                android:textSize="22dp"
+                android:gravity="center"
+                android:text="Delivery Status"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/generationtxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="(E-way Generation)"
+                android:textColor="#000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topHeader"
+            android:gravity="center"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+            <FrameLayout
+                android:background="@drawable/background_rotate"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:layout_height="320dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dip"
+                        android:layout_marginTop="12dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/dashboardButton"
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginRight="4dp"
+                            android:textSize="16dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:text="Total Request\r\n 0" />
+
+                        <Button
+                            android:id="@+id/buyerRegistrationButton"
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginLeft="4dp"
+                            android:textSize="16dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:text="In Process\r\n  0" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dip"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/supplierRegistrationButton"
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginTop="4dp"
+                            android:textSize="16dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:text="Delivered\r\n 0" />
+
+                        <Button
+                            android:id="@+id/transporterRegistrationButton"
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginTop="4dp"
+                            android:textSize="16dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:text="Pending\r\n 0" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/body1"
+            android:layout_marginTop="26dp"
+
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/headerLayout"
+                android:background="#8291A4"
+                android:textSize="22dp"
+                android:gravity="center"
+                android:text="Payment Status"
+                android:textColor="#FFFFFF" />
+
+            <LinearLayout
+                android:id="@+id/valueLayout"
+                android:layout_width="match_parent"
+                android:background="#8291A4"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_weight="1" >
+
+                <Button
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:text="$1744.33"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:background="@color/transparent"
+                    android:layout_marginLeft="2dp"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:layout_weight="1"
+                    android:text="750$"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/creditLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#8291A4"
+
+                android:layout_gravity="top"
+                android:layout_below="@+id/valueLayout"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="12dp"
+                    android:gravity="center|top"
+                    android:textColor="#FFFFFF"
+                    android:text="Available Credit"/>
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="12dp"
+                    android:gravity="center|top"
+                    android:textColor="#FFFFFF"
+                    android:layout_weight="1"
+                    android:text="Credit Score"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

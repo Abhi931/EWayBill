@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/mainLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+    android:layout_height="match_parent">
+
+   <!-- <LinearLayout
+        android:id="@+id/addClientLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff9b00"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="208dp"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_weight=".05"
+            android:text="Client Registration"
+            android:textColor="@color/ntv_white"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btnClientAdd"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="22dp"
+            android:padding="2dp"
+            android:text="Add"
+            android:background="@color/ntv_white"
+            android:gravity="center"
+            android:textColor="#ff9b00"
+            android:textSize="16dp" />
+        <Button
+            android:id="@+id/homebtn"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="22dp"
+            android:padding="2dp"
+            android:text="Home"
+            android:background="@color/ntv_white"
+            android:gravity="center"
+            android:textColor="#ff9b00"
+            android:textSize="16dp" />
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:id="@+id/addClientLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#61A6DD"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight=".05"
+            android:gravity="left|center"
+            android:layout_marginLeft="6dp"
+            android:text="Client Registration"
+            android:textColor="#FFF"
+            android:textSize="22dp" />
+
+        <ImageButton
+            android:id="@+id/btnClientAdd"
+            android:layout_width="46dp"
+            android:layout_height="47dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginRight="22dp"
+            android:background="@drawable/add_user_icon"
+            android:textColor="#ff9b00"
+            android:textSize="16dp" />
+
+        <ImageButton
+            android:id="@+id/homeBtn"
+            android:layout_width="42dp"
+            android:layout_height="47dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="9dp"
+            android:background="@drawable/home"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/clientRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="519dp"
+        android:padding="10dp"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/addClientLayout"
+        tools:visibility="visible" />
+
+</android.support.constraint.ConstraintLayout>

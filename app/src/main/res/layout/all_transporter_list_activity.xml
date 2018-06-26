@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:background="@drawable/background"
+    android:layout_height="match_parent">
+
+    <!--<LinearLayout
+        android:id="@+id/addTransporterLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff9b00"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="208dp"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_weight=".05"
+            android:text="Transporter Registration"
+            android:textColor="@color/ntv_white"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btnTransporterAdd"
+            android:layout_width="62dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="22dp"
+            android:background="@color/ntv_white"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="Add"
+            android:textColor="#ff9b00"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/homebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="22dp"
+            android:background="@color/ntv_white"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="Home"
+            android:textColor="#ff9b00"
+            android:textSize="16dp" />
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:id="@+id/addTransporterLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#61A6DD"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="6dp"
+            android:layout_weight=".05"
+            android:gravity="left|center"
+            android:text="Transporter Registration"
+            android:textColor="#FFF"
+            android:textSize="22dp" />
+
+        <ImageButton
+            android:id="@+id/btnTransporterAdd"
+            android:layout_width="46dp"
+            android:layout_height="47dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginRight="22dp"
+            android:background="@drawable/add_user_icon"
+            android:textColor="#ff9b00"
+            android:textSize="16dp" />
+
+        <ImageButton
+            android:id="@+id/homeBtn"
+            android:layout_width="42dp"
+            android:layout_height="47dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="9dp"
+            android:background="@drawable/home"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/transporterRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="519dp"
+        android:padding="10dp"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/addTransporterLayout"
+        tools:visibility="visible" />
+
+</android.support.constraint.ConstraintLayout>

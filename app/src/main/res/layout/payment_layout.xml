@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nestedScrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#61A6DD"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight=".05"
+            android:gravity="left|center"
+            android:layout_marginLeft="6dp"
+            android:text="Add Payment "
+            android:textColor="#FFF"
+            android:textSize="20dp" />
+
+        <ImageButton
+            android:id="@+id/homeBtn"
+            android:layout_width="42dp"
+            android:layout_height="47dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="9dp"
+            android:background="@drawable/home"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headerLayout"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+            <!--  <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:layout_marginTop="3dp"
+                  android:textColor="#ff9b00"
+                  android:textStyle="bold"
+                  android:textSize="16dp"
+                  android:text="eWayBillApps" />-->
+
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- <ImageView
+               android:src="@drawable/user"
+               android:layout_width="40dp"
+               android:layout_marginTop="17dp"
+               android:layout_height="40dp"
+               android:layout_gravity="center_horizontal" />
+
+           <android.support.design.widget.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="8dp"
+               android:layout_marginBottom="8dp">
+
+              <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:textColor="#ff9b00"
+                   android:textStyle="bold"
+                   android:background="@color/ntv_white"
+                   android:textSize="22dp"
+                   android:text="LOGIN" />
+           </android.support.design.widget.TextInputLayout>
+   -->
+        <!-- Email Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="22dp">
+
+            <EditText
+                android:id="@+id/textInputEditTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Card number"
+                android:inputType="text" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Password Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="3dp">
+
+            <EditText
+                android:id="@+id/textInputEditTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Expiry date(MM/YY)"
+                android:inputType="textPassword" />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="3dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name on the Card"
+                android:inputType="textPassword"/>
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="3dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Add a nickname"
+                android:inputType="textPassword"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <!-- GSTIN  Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp">
+            <EditText android:id="@+id/textInputEditTextGSTIN"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="GSTIN"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView android:id="@+id/textViewLinkRegister"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Terms &amp; Conditions"
+            android:gravity="center"
+            android:textColor="@color/menu_btn_red"
+            android:textSize="16dp"/>
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/appCompatButtonLogin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/blue3"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="SAVE CARD"
+            android:textColor="@color/ntv_white" />
+
+
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/registeredLayout"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/tranporterFrameLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:visibility="gone"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:padding="32dp"
+            android:layout_centerHorizontal="true">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="12dp"
+                android:paddingTop="10dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/userEditText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="GSTIN NO"
+                        android:textSize="20dp"
+                        android:gravity="center"
+                        android:inputType="text"
+                        android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/passwordEditText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:textSize="15dp"
+                        android:drawableTint="#FF4081"
+                        android:hint="Enter GSTIN"
+                        android:gravity="center"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/cnfrmpasswordEditText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:drawableTint="#FF4081"
+                        android:textSize="15dp"
+                        android:hint="Enter the code as shown below"
+                        android:inputType="textPassword"
+                        android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/EmailIdEditText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:textSize="30dp"
+                        android:background="@color/lightgrey"
+                        android:drawableTint="#FF4081"
+                        android:gravity="center"
+                        android:hint="VTY3838bc"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/contactNoEditText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:textSize="15dp"
+                        android:drawableTint="#FF4081"
+                        android:hint="Enter code "
+
+                        android:gravity="center"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnLogin"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".05"
+
+                        android:background="@color/menu_btn_red"
+                        android:layout_marginRight="12dp"
+                        android:text="Go"
+                        android:textAllCaps="false"
+                        android:textColor="#fff"
+                        android:textSize="15sp" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".05"
+                        android:background="@color/menu_btn_red"
+                        android:layout_marginLeft="12dp"
+                        android:text="Exit"
+                        android:textAllCaps="false"
+
+                        android:textColor="#fff"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/unRegisteredLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:layout_marginLeft="@dimen/activity_filter_vertical_margin"
+            android:layout_marginRight="@dimen/activity_filter_vertical_margin"
+            android:layout_marginTop="@dimen/activity_filter_vertical_margin">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:layout_margin="@dimen/activity_vertical_margin"
+                    android:textSize="@dimen/body_name_text"
+                    android:textColor="@color/black"
+                    android:text="GSTIN NO :"/>
+
+                <EditText
+                    android:id="@+id/etGSTIN"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/activity_vertical_margin"
+                    android:enabled="true"
+                    android:textSize="@dimen/body_name_text"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:layout_margin="@dimen/activity_vertical_margin"
+                    android:textSize="@dimen/body_name_text"
+                    android:textColor="@color/black"
+                    android:text="NAME : "/>
+
+                <EditText
+                    android:id="@+id/etName"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/activity_vertical_margin"
+                    android:enabled="true"
+                    android:textSize="@dimen/body_name_text"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:layout_margin="@dimen/activity_vertical_margin"
+                    android:textSize="@dimen/body_name_text"
+                    android:textColor="@color/black"
+                    android:text="MOBILE NO : "/>
+
+                <EditText
+                    android:id="@+id/etMobileNo"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/activity_vertical_margin"
+                    android:enabled="true"
+                    android:textSize="@dimen/body_name_text"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:layout_margin="@dimen/activity_vertical_margin"
+                    android:textSize="@dimen/body_name_text"
+                    android:textColor="@color/black"
+                    android:text="EMAIL ID : "/>
+
+                <EditText
+                    android:id="@+id/etEmailId"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/activity_vertical_margin"
+                    android:enabled="true"
+                    android:textSize="@dimen/body_name_text"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:layout_margin="@dimen/activity_vertical_margin"
+                    android:textSize="@dimen/body_name_text"
+                    android:textColor="@color/black"
+                    android:text="PLACE : "/>
+
+                <EditText
+                    android:id="@+id/etPlace"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/activity_vertical_margin"
+                    android:enabled="true"
+                    android:textSize="@dimen/body_name_text"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:layout_margin="@dimen/activity_vertical_margin"
+                    android:textSize="@dimen/body_name_text"
+                    android:textColor="@color/black"
+                    android:text="PINCODE : "/>
+
+                <EditText
+                    android:id="@+id/etPincode"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/activity_vertical_margin"
+                    android:enabled="true"
+                    android:textSize="@dimen/body_name_text"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:layout_margin="@dimen/activity_vertical_margin"
+                    android:textSize="@dimen/body_name_text"
+                    android:textColor="@color/black"
+                    android:text="STATE : "/>
+
+                <EditText
+                    android:id="@+id/etState"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/activity_vertical_margin"
+                    android:enabled="true"
+                    android:textSize="@dimen/body_name_text"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnSave"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".05"
+                    android:visibility="gone"
+                    android:focusable="true"
+                    android:background="@color/blue3"
+                    android:layout_marginRight="12dp"
+                    android:text="SAVE"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="15sp" />
+
+
+                <Button
+                    android:id="@+id/btnUpdate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".05"
+                    android:visibility="gone"
+                    android:focusable="true"
+                    android:background="@color/blue3"
+                    android:layout_marginRight="12dp"
+                    android:text="UPDATE"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/btnNext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".05"
+                    android:background="@color/menu_btn_red"
+                    android:layout_marginLeft="12dp"
+                    android:text="NEXT"
+                    android:textAllCaps="false"
+
+                    android:textColor="#fff"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+<!--
+    <LinearLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/view2">
+
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+
+            android:textSize="16dp"
+            android:background="@color/shadow_light_grey_transparent"
+            android:layout_gravity="bottom"
+            android:textColor="@color/menu_btn_red"
+            android:text="Next" />
+    </LinearLayout>-->
+
+
+
+    <!--<LinearLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/view2">
+
+
+        <Button
+            android:id="@+id/btnUnRegisteredDetails"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="70dp"
+            android:background="@color/blue3"
+            android:layout_gravity="bottom"
+            android:textColor="@color/ntv_white"
+            android:text="UnRegistered" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="65dp"
+            android:background="@color/black"/>
+
+        <Button
+            android:id="@+id/btnRegisteredDetails"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@color/blue3"
+            android:text="Registered"
+            android:textColor="@color/ntv_white" />
+
+    </LinearLayout>-->
+</RelativeLayout>

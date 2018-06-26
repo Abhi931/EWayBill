@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/ntv_white"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:paddingBottom="12dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="12dp">
+
+    <TextView
+        android:id="@+id/ticketTokenNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/menu_btn_red"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/ticketTokenNo"
+       android:gravity="right"
+       android:orientation="horizontal">
+
+       <ImageButton
+           android:id="@+id/downloadImageButton"
+           android:layout_width="32dp"
+           android:layout_marginRight="4dp"
+           android:background="@drawable/download_icon"
+           android:layout_height="32dp" />
+       <ImageButton
+           android:id="@+id/shareImageButton"
+           android:layout_width="32dp"
+           android:layout_height="32dp"
+           android:layout_marginRight="4dp"
+           android:background="@drawable/share_icon"/>
+       <ImageButton
+           android:id="@+id/extendImageButton"
+           android:layout_width="32dp"
+           android:layout_height="32dp"
+           android:layout_marginRight="4dp"
+           android:background="@drawable/extend_icon"/>
+
+   </LinearLayout>
+</RelativeLayout>

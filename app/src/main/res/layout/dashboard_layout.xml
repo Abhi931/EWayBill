@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layoutClientRegistration"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnClientRegistration"
+            android:layout_width="0dip"
+            android:text="Client Registration"
+            android:background="#ffac32"
+            android:textColor="@color/ntv_white"
+            android:textSize="16dp"
+            android:layout_margin="12dp"
+            android:visibility="visible"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutSupplierRegistration"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/btnSupplierRegistration"
+            android:layout_width="0dip"
+            android:text="Supplier Registration"
+            android:background="#ffb64c"
+            android:textColor="@color/ntv_white"
+            android:textSize="16dp"
+            android:layout_margin="12dp"
+            android:visibility="visible"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutTransporterRegistration"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/btnTransporterRegistration"
+            android:layout_width="0dip"
+            android:text="Transporter Registration"
+            android:visibility="visible"
+            android:layout_margin="12dp"
+            android:background="#ff9b00"
+            android:textColor="@color/ntv_white"
+            android:textSize="16dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/btnProduct"
+            android:layout_width="0dip"
+            android:text="ProductEway List"
+            android:textColor="@color/menu_btn_red"
+            android:enabled="false"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+
+        android:orientation="horizontal"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/btnGenerateEwayBill"
+            android:layout_width="0dip"
+            android:background="#ffc166"
+            android:textColor="@color/ntv_white"
+            android:layout_margin="12dp"
+            android:text="Generate E-Way Bill"
+            android:textSize="16dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/registration_login"
+    android:layout_centerInParent="true"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="150dp"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/btnClientRegistration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/shadow_light_grey_transparent"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="Client Registraion"
+            android:textColor="@color/menu_btn_red"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/btnSupplierRegistration"
+            android:layout_width="match_parent"
+android:layout_marginTop="12dp"
+            android:layout_height="wrap_content"
+            android:background="@color/shadow_light_grey_transparent"
+            android:gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:padding="20dp"
+            android:text="Supplier Registration"
+            android:textColor="@color/menu_btn_red"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/btnTransporterRegistration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:padding="20dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/shadow_light_grey_transparent"
+            android:gravity="center"
+            android:text="Transporter Registration"
+            android:textColor="@color/menu_btn_red"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+
+</LinearLayout>-->

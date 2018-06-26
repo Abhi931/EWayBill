@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="12dp"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@color/lightskyblue"
+        android:orientation="vertical"
+        android:layout_weight="1" >
+
+
+      <TextView
+          android:id="@+id/userNametxt"
+          android:layout_width="match_parent"
+          android:layout_margin="4dp"
+          android:layout_height="wrap_content"
+          android:textColor="@color/black"
+          android:hint=" Name "/>
+
+        <TextView
+            android:id="@+id/emailIdtxt"
+            android:layout_width="match_parent"
+            android:layout_margin="4dp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:hint=" EMAIL ID "/>
+
+      <!--  <TextView
+            android:id="@+id/mobilenotxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_margin="7dp"
+            android:hint=" MOBILE NO "/>-->
+
+        <TextView
+            android:id="@+id/gstintxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:textColor="@color/black"
+            android:hint=" GSTIN "/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/dashboardButton"
+            android:layout_width="0dip"
+            android:text="Report"
+
+            android:background="@drawable/design"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/buyerRegistrationButton"
+            android:layout_width="0dip"
+            android:background="@drawable/design"
+            android:layout_marginLeft="4dp"
+            android:layout_marginBottom="4dp"
+            android:text="Retailer"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="horizontal"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/supplierRegistrationButton"
+            android:layout_width="0dip"
+            android:text="Distributer "
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/design"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/transporterRegistrationButton"
+            android:layout_width="0dip"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/design"
+            android:text="Transporter"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="horizontal"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/ewaystatusButton"
+            android:layout_width="0dip"
+            android:text="E-WAY BILL\r\nSTATUS"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/design"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/ewayFinalStatusButton"
+            android:layout_width="0dip"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/design"
+            android:text="E-WAY\r\nDOWNLOAD/SHARE"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="horizontal"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/paymentButton"
+            android:layout_width="0dip"
+            android:text="PAYMENT"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/design"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/supportButton"
+            android:layout_width="0dip"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/design"
+            android:text="SUPPORT"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="horizontal"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/invoiceUploadButton"
+            android:layout_width="0dip"
+            android:text="Generate E-Way Bill\r\nUpload Invoice"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/design"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
